@@ -1,0 +1,330 @@
+.home-container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(1fr, 6);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "image image image image image image"
+    "main main main main sidebar sidebar"
+    "main main main main sidebar sidebar"
+    "main main main main sidebar sidebar";
+}
+
+.image {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.home-main-container {
+    grid-area: main;
+    height: max-content;
+}
+
+.home-sidebar-container {
+    grid-area: sidebar;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.history-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history-info {
+    background-color: var(--grey);
+    padding: 20px;
+    box-shadow: 0px 13px 38px -8px rgba(0,0,0,0.69);
+}
+
+.history-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--yellow);
+}
+
+.history-info p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    color: var(--beige);
+}
+
+.history-info p a {
+    color: var(--beige);
+    text-decoration: none;
+}
+
+.history-container picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 5% 5%;
+    box-shadow: 0px 13px 38px -8px rgba(0,0,0,0.69);
+    margin-bottom: 40px;
+}
+
+.text-sep {
+    margin-bottom: 10px;
+}
+
+.history-info a:hover {
+    font-size: var(--lg);
+}
+
+.home-sidebar-container h2 {
+    color: var(--grey);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.home-sidebar-container h2 {
+    text-shadow: 2px 2px var(--yellow);
+}
+.turism-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.turism-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius:32px;
+}
+
+.turism-info h2 {
+    color: var(--yellow);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: none;
+}
+
+.turism-info p {
+    color: var(--grey);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--md);
+}
+
+.contact-container {
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    border-top: 4px solid var(--grey);
+    background-color: var(--yellow);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.contact-container p {
+    margin-top: 05px;
+    font-size: var(--md);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+}
+
+
+.button-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    float: right;
+    background-color: var(--white);
+}
+
+.contact-container button img {
+    width: 40%;
+    height: 40%;
+}
+
+.mapa-ba {
+    width: 95%;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.mapa-ba h2 {
+    margin-top: 38px;
+    color: var(--grey);
+    text-shadow: 2px 2px var(--yellow);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+
+    .home-container {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+        "main main"
+        "sidebar sidebar";
+    }
+
+    .image {
+        display: none;
+    }
+
+    .history-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   .home-main-container h2 {
+        font-size: var(--lg);
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 8px;
+        color: var(--grey);
+        text-shadow: 2px 2px var(--yellow);
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .history-info {
+        background-color: var(--grey);
+        padding: 20px;
+        border-radius: 5% 5% 0 0;
+        box-shadow: 0px 13px 38px -8px rgba(0,0,0,0.69);
+    }
+
+    .history-info h3 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+        color: var(--yellow);
+    }
+
+    .history-info p {
+        font-size: var(--sm);
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+        color: var(--beige);
+    }
+
+    .history-info p a {
+        color: var(--beige);
+        text-decoration: none;
+    }
+
+    .history-container picture img {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 5% 5%;
+        box-shadow: 0px 13px 38px -8px rgba(0,0,0,0.69);
+        margin-bottom: 40px;
+    }
+
+    .text-sep {
+        margin-bottom: 10px;
+    }
+
+    .history-info a:hover {
+        font-size: var(--lg);
+    }
+
+    .home-sidebar-container h3 {
+        color: var(--grey);
+        text-shadow: 2px 2px var(--yellow);
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+    }
+    .turism-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .turism-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 200px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius:32px;
+    }
+
+    .turism-info h2 {
+        color: var(--yellow);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .turism-info p {
+        color: var(--grey);
+        font-family: 'Poppins', sans-serif;
+        font-size: var(--md);
+    }
+
+    .contact-container {
+        width: 80%;
+        height: 200px;
+        margin: 20px auto;
+        border-top: 4px solid var(--grey);
+        background-color: var(--yellow);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .contact-container p {
+        width: 75%;
+        margin-top: 10px;
+        font-size: var(--md);
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin: 10px;
+    }
+
+    .button-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+     
+        border-radius: 50%;
+        float: right;
+        background-color: var(--white);
+    }
+
+    .mapa-ba {
+        width: 100%;
+        margin: 10px auto;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .mapa-ba iframe {
+        width: 90%;
+    }
+  }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/contacto.css">
+        <link rel="shortcut icon" href="./icons/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Buenos Aires</title>
+    </head>
+    <body>
+        <header>
+            <nav> 
+                <div id="logo">
+            <h2>Buenos Aires</h2>
+                </div> 
+            <ul>
+                <!-- DESKTOP -->
+                <li class="desktop"><a href="index.html">Inicio</a></li>
+                <li class="desktop"><a href="gastronomia.html">Gastronomía</a></li>
+                <li class="desktop"><a href="turismo.html">Turismo</a></li>
+                <li class="desktop"><a href="contacto.html">Contacto</a></li>
+    
+                <!--  TABLET-->
+                <li class="tablet"><a href="index.html">Inicio</a></li>
+                <li class="tablet"><a href="gastronomia.html">Gastronomía</a></li>
+                <li class="tablet"><a href="turismo.html">Turismo</a></li>
+                <li class="tablet"><a href="contacto.html">Contacto</a></li>
+    
+                <!-- MOBILE-->
+                <li class="phone"><a href="index.html">Inicio</a></li>
+                <li class="phone"><a href="gastronomia.html">Gastronomía</a></li>
+                <li class="phone"><a href="turismo.html">Turismo</a></li>
+                <li class="phone"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <h1 class="title-h2">Rellená el formulario y recibí info sobre las próximas actividades en Buenos Aires!</h1>
+        <main class="contact-main-container">
+            <form method="post" enctype="multipart/form-data" action="gracias.html">
+        
+                <label>Ingresá tu nombre y apellido:</label>
+                <input type="text" name="nombre" placeholder="Pedro Perez">
+
+                <label>Ingresá tu mail:</label>
+                <input type="email" name="mail" placeholder="pedroperez@mail.com" required>
+
+                <label>Ingresá tu celular:</label>
+                <input type="number" name="cel" required placeholder="4444-4444">
+
+                <label class="date-month-year">Ingresá el día, la semana y el mes del cual querés recibir info:</label>
+                <input type="date" name="fecha" min="2022-01-01" class="date-month-y">
+                <input type="week" name="semana" class="date-month-y">
+                <input type="month" name="mes" class="date-month-y">
+
+                <label>Contanos cuáles son tus intereses artísticos</label>
+                <select name="actividades[]" size="3" multiple class="act-seleccion">
+                    <option value="cementerio">Música</option>
+                    <option value="casablanca">Teatro</option>
+                    <option value="puertomadero">Danza</option>    
+                </select>
+
+                <label>Escogé de que actividad querés recibir información:</label>
+                <select name="actividades[]" size="5" multiple class="act-seleccion">
+                    <option value="cementerio">Cementerio Recoleta</option>
+                    <option value="casablanca">Casa Blanca</option>
+                    <option value="puertomadero">Puerto Madero</option>
+                    <option value="planetario">Planetario</option>
+                    <option value="tango">Tango</option>
+                </select>
+            <fieldset>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        </main>
+    <section class="video-ba">
+            <h2 class="title-h2">Conocé Buenos Aires</h2>
+                
+                    <iframe src="https://www.youtube.com/embed/K7LvFwNYRZE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <footer class="footer">
+            <p>Sabrina Torres - </p>
+            <p>Maquetado y Desarrollo Web - </p>
+            <p>Docente a cargo: D'addezio, Alejandro</p>
+            <p>Este sitio es una entrega para un TP Final del primer cuatrimestre de la Escuela Da Vinci en el año 2022.</p>
+        </footer>
+    </body>
+</html>

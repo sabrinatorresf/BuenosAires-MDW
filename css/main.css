@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--beige);
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --yellow: #fcda59;
+    --grey: #333333;
+    --beige: #f4f3ee;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+header {
+    width: 100%;
+    height: max-content;
+}
+
+#logo h2{
+    background: url(../images/buenosaires-logo-.png) no-repeat;
+    width: 300px;
+    height: 80px;
+    font-size: 0;
+    margin: 40px 0 0 20px;
+  }
+
+nav {
+    height: 80px;
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+  }
+  
+  nav li {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:inline;
+  }
+  
+  nav a {
+    color:#333333;
+    text-decoration:none;
+    display: inline-block; 
+    margin:0;
+    padding:4px 8px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  nav a:hover {
+      color: var(--yellow);
+      font-weight:bold;
+  }
+
+  .title-h2 {
+    text-align: center;
+    margin-top: 38px;
+    color: var(--grey);
+    text-shadow: 2px 2px var(--yellow);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+.footer {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--grey);
+    color: var(--beige);
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+  @media (max-width: 1700px) {
+    nav li.desktop,nav li.phone {
+        display:none;
+    }
+    nav li.tablet {
+          display:inline;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    #logo  {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 13px 8px -8px rgba(0,0,0,0.69);
+        margin-bottom: 20px;
+    }
+
+    #logo h2 {
+        margin: 20px;
+        height: 50px;
+    }
+    nav {
+        width: 100%;
+        height: max-content;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav li.desktop, nav li.tablet {
+        display:none;
+    }
+    nav li.phone {
+        display:block;
+    }
+    nav li {
+        text-align:left;
+    }
+
+    nav a {
+        width:100%; 
+        display:block;
+        font-size:var(--md);
+    }
+  }

@@ -1,0 +1,28 @@
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --yellow: #fcda59;
+    --grey: #333333;
+    --beige: #f4f3ee;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+
+.title-h2 {
+    background-color: var(--beige);
+    padding: 20px;
+    text-align: center;
+} 
+
+.contact-resp-main-container {
+    height: 80vh;
+    text-align: center;
+    background-image: url(../images/background\(inicio\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+   align-items: center;
+}

@@ -1,0 +1,7 @@
+CHEQUEADAS:
+
+index.html TODO OK
+turismo.html TODO OK
+gastronomia.html TODO OK
+contacto.html TODO OK
+gracias.html TODO OK
