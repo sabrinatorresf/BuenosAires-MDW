@@ -109,7 +109,7 @@
         width: 100%;
         height: auto;
         background-color: var(--yellow);
-        border: 3px solid var(--white);
+        
     }
 
     .info-description {
